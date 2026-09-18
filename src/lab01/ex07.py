@@ -1,4 +1,4 @@
-s = input()
+s = input("in: ")
 
 s_otv = ''
 ind_a = 0
@@ -18,4 +18,4 @@ for c in s:
 for i in range(ind_b, len(s), ind_b - ind_a):
     s_otv += s[i]
 
-print(s_otv)
+print(f"out: {s_otv}")

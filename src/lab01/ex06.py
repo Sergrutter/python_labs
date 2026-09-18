@@ -3,8 +3,8 @@ N = int(input())
 cnt1 = 0
 cnt2 = 0
 
-for _ in range(N):
-    s = input().split()
+for i in range(N):
+    s = input(f"in_{i + 1}: ").split()
     if s[-1] == 'True':
         cnt1 += 1
     else:
