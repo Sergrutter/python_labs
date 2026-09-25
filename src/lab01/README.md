@@ -3,48 +3,48 @@
 ## Задание 1 — Привет и возраст
 Запрашивает имя и возраст, выводит через f-строку ответ по шаблону 
 
-[Код: src/01_greeting.py](src/01_greeting.py)
+[Код: src/01_greeting.py](../../src/lab01.01_greeting.py)
 
 ![Результат задания 1](../../images/lab01/image1.png)
 
 ## Задание 2 — Сумма и среднее
 Принимает два вещественных числа (с точкой или запятой), выводит сумму и среднее с округлением до 2 знаков после запятой 
 
-[Код: src/02_sum_avg.py](../../src/02_sum_avg.py)
+[Код: src/02_sum_avg.py](../../src/lab01/02_sum_avg.py)
 
 ![Результат задания 2](../../images/lab01/image2.png)
 
 ## Задание 3 — Чек: скидка и НДС
 Рассчитывает стоимость после скидки, сумму НДС и итоговую стоимость по введенным данным
 
-[Код: src/03_discount_vat.py](../../src/03_discount_vat.py)
+[Код: src/03_discount_vat.py](../../src/lab01/03_discount_vat.py)
 
 ![Результат задания 3](../../images/lab01/image3.png)
 
 ## Задание 4 — Минуты → ЧЧ:ММ
 Переводит целое количество минут в формат часы:минуты
 
-[Код: src/04_minutes_to_hhmm.py](../../src/04_minutes_to_hhmm.py)
+[Код: src/04_minutes_to_hhmm.py](../../src/lab01/04_minutes_to_hhmm.py)
 
 ![Результат задания 4](../../images/lab01/image4.png)
 
 ## Задание 5 — Инициалы и длина строки
 Из введённого ФИО формирует инициалы в верхнем регистре и выводит длину строки без пробелов
 
-[Код: src/05_initials_and_len.py](../../src/05_initials_and_len.py)
+[Код: src/05_initials_and_len.py](../../src/lab01/05_initials_and_len.py)
 
 ![Результат задания 5](../../images/lab01/image5.png)
 
 ## Задание 6* — Подсчёт участников
 Считывает N записей об участниках и считает количество очных и заочных
 
-[Код: src/06_participants.py](../../src/06_participants.py)
+[Код: src/06_participants.py](../../src/lab01/06_participants.py)
 
 ![Результат задания 6](../../images/lab01/image6.png)
 
 ## Задание 7* — Восстановление строки
 Восстанавливает оригинальную строку по заданному алгоритму и зашифрованной строке
 
-[Код: src/07_decode_string.py](../../src/07_decode_string.py)
+[Код: src/07_decode_string.py](../../src/lab01/07_decode_string.py)
 
 ![Результат задания 7](../../images/lab01/image7.png)
