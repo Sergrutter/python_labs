@@ -1,4 +1,5 @@
 def check_matrix(mat: list[list[float | int]]) -> None:
+    """Проверяет является ли матрица прямоугольной"""
     if not mat:
         return
 
@@ -10,6 +11,7 @@ def check_matrix(mat: list[list[float | int]]) -> None:
 
 
 def transpose(mat: list[list[float | int]]) -> list[list]:
+    """Возвращает транспонированную матрицу"""
     check_matrix(mat)
 
     if not mat:
@@ -29,6 +31,7 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
 
 
 def row_sums(mat: list[list[float | int]]) -> list[float]:
+    """Возвращает список сумм элементов каждой строки"""
     check_matrix(mat)
 
     result = []
@@ -45,6 +48,7 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
 
 
 def col_sums(mat: list[list[float | int]]) -> list[float]:
+    """Возвращает список сумм элементов каждого столбца"""
     check_matrix(mat)
 
     if not mat:
