@@ -7,6 +7,8 @@
 [Код: src/arrays.py](../../src/lab02/arrays.py)
 
 ![Результат задания 1](../../images/lab02/image1.png)
+![Результат задания 1](../../images/lab02/image2.png)
+![Результат задания 1](../../images/lab02/image3.png)
 
 ## Задание 2 — Транспонирование матрицы
 
@@ -14,7 +16,7 @@
 
 [Код: src/matrix.py](../../src/lab02/matrix.py)
 
-![Результат задания 2](../../images/lab02/image2.png)
+![Результат задания 2](../../images/lab02/image4.png)
 
 ## Задание 3 — Суммы строк и столбцов
 
@@ -22,7 +24,8 @@
 
 [Код: src/matrix.py](../../src/lab02/matrix.py)
 
-![Результат задания 3](../../images/lab02/image3.png)
+![Результат задания 3](../../images/lab02/image5.png)
+![Результат задания 3](../../images/lab02/image6.png)
 
 ## Задание 4 — Форматирование записи студента
 
@@ -30,7 +33,7 @@
 
 [Код: src/tuples.py](../../src/lab02/tuples.py)
 
-![Результат задания 4](../../images/lab02/image4.png)
+![Результат задания 4](../../images/lab02/image7.png)
 
 ## Задание 5 — Проверка ошибочных данных
 
@@ -38,4 +41,4 @@
 
 [Код: src/arrays.py](../../src/lab02/arrays.py), [src/matrix.py](../../src/lab02/matrix.py)
 
-![Результат задания 5](../../images/lab02/image5.png)
+![Результат задания 5](../../images/lab02/image3.png)
