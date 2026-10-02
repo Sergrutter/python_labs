@@ -1,4 +1,6 @@
 def format_record(rec: tuple[str, str, float]) -> str:
+    """Форматирует запись студента с ФИО, группой и GPA"""
+    
     if not isinstance(rec, tuple) or len(rec) != 3:
         raise ValueError('Запись должна содержать ФИО, группу и GPA')
 
