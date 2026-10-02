@@ -1,25 +1,42 @@
 def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
     if not nums:
-        raise ValueError
+        raise ValueError('Пустой список')
 
-    return tuple([min(nums), max(nums)])
+    min_value = nums[0]
+    max_value = nums[0]
+
+    for num in nums:
+        if num < min_value:
+            min_value = num
+        if num > max_value:
+            max_value = num
+
+    return min_value, max_value
+
 
 def unique_sorted(nums: list[float | int]) -> list[float | int]:
-    set_nums = set(nums)
-    massive = list(set_nums)
-    massive.sort()
-    return massive
+    unique = []
+
+    for num in nums:
+        if num not in unique:
+            unique.append(num)
+
+    for i in range(len(unique)):
+        for j in range(i + 1, len(unique)):
+            if unique[i] > unique[j]:
+                unique[i], unique[j] = unique[j], unique[i]
+
+    return unique
+
 
 def flatten(mat: list[list | tuple]) -> list:
-    massive = []
+    result = []
 
     for row in mat:
         if not isinstance(row, (list, tuple)):
-            raise TypeError
+            raise TypeError('Строка матрицы должна быть списком или кортежем')
 
-        for elements in row:
-            massive.append(elements)
+        for item in row:
+            result.append(item)
 
-    return massive
-
-
+    return result
