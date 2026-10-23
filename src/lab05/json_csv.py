@@ -22,17 +22,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     if not isinstance(data, list) or not data:
         raise ValueError('Пустой JSON или неподдерживаемая структура')
 
-    for item in data:
-        if not isinstance(item, dict):
-            raise ValueError('JSON должен содержать список словарей')
-
-    if not all(isinstance(key, str) for item in data for key in item):
-        raise ValueError('Ключи объектов JSON должны быть строками')
-
     fields = sorted({key for item in data for key in item})
-
-    if not fields:
-        raise ValueError('В объектах JSON отсутствуют поля')
 
     dst.parent.mkdir(parents=True, exist_ok=True)
 
@@ -60,19 +50,10 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
         if not reader.fieldnames or not any(reader.fieldnames):
             raise ValueError('CSV пустой или не содержит заголовка')
 
-        if any(name is None or name == '' for name in reader.fieldnames):
-            raise ValueError('Заголовки CSV не должны быть пустыми')
-
-        if len(set(reader.fieldnames)) != len(reader.fieldnames):
-            raise ValueError('Заголовки CSV должны быть уникальными')
-
         data = list(reader)
 
     if not data:
         raise ValueError('CSV не содержит строк с данными')
-
-    if any(None in row for row in data):
-        raise ValueError('Количество значений в строке не совпадает с заголовком')
 
     dst.parent.mkdir(parents=True, exist_ok=True)
 

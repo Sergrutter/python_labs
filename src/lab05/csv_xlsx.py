@@ -19,17 +19,13 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
     with src.open('r', newline='', encoding='utf-8') as f:
         rows = list(csv.reader(f))
 
-    if not rows or not rows[0] or not any(value.strip() for value in rows[0]):
-        raise ValueError('CSV пустой или не содержит заголовка')
+    if not rows or not rows[0]:
+        raise ValueError('CSV пустой')
 
     if len(rows) < 2:
         raise ValueError('CSV не содержит строк с данными')
 
     width = len(rows[0])
-
-    for row in rows:
-        if len(row) != width:
-            raise ValueError('Количество значений в строках CSV различается')
 
     wb = Workbook()
     ws = wb.active
