@@ -1,4 +1,4 @@
 [
-  {"name": "Alice", "age": 22},
-  {"name": "Bob", "age": 25}
+  {"name": "Alice", "age": null},
+  {"name": "", "age": false}
 ]
