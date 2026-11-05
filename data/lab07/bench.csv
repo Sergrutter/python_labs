@@ -1,0 +1,13 @@
+task,n,impl,seconds
+sort,1000,sorted,9.169999975711107e-05
+sort,1000,bubble_sort,0.04965699999593198
+sort,1000,insertion_sort,0.020507800043560565
+sort,1000,selection_sort,0.021983099984936416
+sort,10000,sorted,0.0017356000025756657
+sort,10000,bubble_sort,7.231471800012514
+sort,10000,insertion_sort,2.432727499981411
+sort,10000,selection_sort,2.820584599976428
+sort,100000,sorted,0.01940160000231117
+sort,100000,bubble_sort,>60
+sort,100000,insertion_sort,>60
+sort,100000,selection_sort,>60
