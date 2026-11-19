@@ -45,6 +45,7 @@ print(result)
 [Посмотреть код serialize.py](serialize.py)
 
 ![Результат задания 3](../../images/lab08/img03.png)
+![Результат задания 3](../../images/lab08/img04.png)
 
 ## Задание 4. Проверка некорректных данных
 
@@ -62,7 +63,7 @@ students_from_json('data/lab08/students_bad.json')
 
 [Посмотреть код serialize.py](serialize.py)
 
-![Результат задания 4](../../images/lab08/img04.png)
+![Результат задания 4](../../images/lab08/img05.png)
 
 ## Задание 5. Дополнительная работа с CSV
 
