@@ -65,4 +65,4 @@ if __name__ == '__main__':
     check_search()
     check_two_sum()
 
-    print('OK')
+    print(f'OK')
